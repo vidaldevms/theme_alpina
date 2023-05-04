@@ -1,0 +1,426 @@
+/*
+Theme Name: Tema Alpina
+Theme URI:
+Description : Teste Alpina
+Author: Gabriel Vidal
+Author URI: 
+Version: 1.0
+*/
+*{
+  font-family: 'Roboto', sans-serif !important;
+}
+h1,h2,h3,h4{
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+}
+a{
+  display: block;
+  text-decoration: none;
+}
+ul{
+  margin: auto;
+}
+
+/***** HEADER *****/
+header{
+  width: 100%;
+  height: auto;
+  background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7));
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);  
+  .logo{
+    padding:  1.875rem 0;
+    img{
+      display: block;
+      height: auto;
+    }
+  }
+  .menu{
+    display: grid;
+  }
+  nav{
+    text-align: center;
+    display: grid;
+    ul{
+      list-style: none;
+      margin: auto;
+      padding: 0;
+      li{
+        position: relative;
+        display: inline-block;
+        a{
+          display: block;
+          font-size: 18px;
+          color: #999;
+          text-decoration: none;
+          padding: 0 1.5rem;
+        }
+        a:hover{
+          color: #FFF;
+        }
+      }
+      li::after{
+        content: '';
+        width: 80%;
+        height: 4px;
+        display: none;
+        background: #FFF;
+        position: absolute;
+        left: 10%;
+        bottom: -125%;
+      }
+      li:hover li::after{
+        display: block !important;
+      }
+      li:first-child{ 
+        padding-left: 0 !important;
+      }
+      li:last-child{
+        padding-right: 0 !important;
+      }
+    }
+  }
+  .bt-contato{
+    a{
+      font-size: 16px;
+      color: #FFF;
+      display: inline-flex;
+      float: right;
+      align-items: center;
+      padding: 12px 31px;
+      gap: 8px;
+      border: 1px solid #FFF;
+      text-decoration: none;
+      text-align: center;
+      margin-top: 1.813rem;
+      transition: 0.7s;
+    }
+    a:hover{
+      transition: 0.7s;
+      background: #FFF;
+      color: #000;
+    }
+  }
+}
+/***** MAIN *****/
+main{
+  width: 100%;
+  height: auto;
+  background: #000;
+}
+/***** SLIDER *****/
+.slider{
+  .caption{
+    margin-top: 16.688rem;
+  }
+  h2{
+    font-size: 64px;
+    font-weight: 900;
+    color: #FFF;
+    text-align: left;
+    text-transform: uppercase;
+    line-height: 57.6px;
+    letter-spacing: -3%;
+  }
+  p{
+    font-family: Roboto;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 400;
+    color: #999;
+    margin-top: 1.5rem;
+    strong{
+      font-weight: 700;
+      color: #FFF;
+    }
+  }
+  .leia-mais{
+    font-size: 24px;
+    line-height: 150%;
+    color: #FFF;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    margin-top: 2.375rem;
+  }
+  .leia-mais::after{
+    content: '';
+    width: 30px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: -30%;
+    background: url(images/icon-seta.png) no-repeat center center;
+  }
+}
+/***** SERVIÇOS *****/
+.solucoes{
+  width: 100%;
+  height: auto;
+  margin-top: 15.625rem;
+  .title{
+    font-size: 56px;
+    font-weight: 900;
+    line-height: 50px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    color: #FFF;
+  }
+  p.sub{
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #999;
+    strong{
+      font-weight: 700;
+      color: #FFF;
+    }    
+  }
+  .default-btn{
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFF;
+    text-decoration: none;
+    position: relative;
+    display: inline;
+    float: right;
+    padding-right: 3.125rem;
+  }
+  .default-btn::after{
+    content: '';
+    width: 30px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: url(images/icon-seta.png) no-repeat center center;
+  }
+  .item{
+    width: 100%;
+    height: auto;
+    background: #191919;
+    padding: 3rem;
+    transition: 0.8s;
+    margin-top: 4.75rem;
+    position: relative;
+    .icone{
+      display: block;
+      
+    }
+    h3{
+      font-size: 32px;
+      font-weight: 900;
+      line-height: 29px;
+      letter-spacing: -0.03em;
+      text-align: left;
+      color: #FFF;
+      margin-top: 1.625rem !important;
+    }
+    .content{
+      padding-top: 4.188rem;
+      p{
+        color: #FFF;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+    }
+  }
+  .item::after{
+    content: '';
+    width: 4.625rem;
+    height: 4.625rem;
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: url(images/icon-seta.png) #191919 no-repeat center center;
+  }
+  .item:hover{
+    cursor: pointer;
+    background: #FFF;
+    transition: 0.8s;
+    h3, p{
+      color: #191919;
+    }
+  }
+  .item:hover .item::after{
+    display: block !important;
+  }
+}
+/***** ALPINA *****/
+.alpina{
+  width: 100%;
+  height: auto;
+  margin-top: 15.375rem;
+  .item-alpina{
+    margin-top: 4.25rem;
+  }
+  .item-alpina .descricao h2.first-title {
+    background: #000;
+    position: relative;
+    left: -15rem;
+    top: -6rem;
+    z-index: 999;
+    padding: 3.5rem 2rem;
+  }
+  .descricao{
+    margin-top: 5.125rem;
+    h2{
+      font-size: 64px;
+      font-weight: 300;
+      color: #FFF;
+      text-align: left;
+      text-transform: uppercase;
+      line-height: 57.6px;
+      letter-spacing: -3%;
+      strong{
+        font-weight: 900;
+      }
+    }
+    p{
+      margin-top: 4rem;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 27px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #999;
+      strong{
+        font-weight: 700;
+        color: #FFF;
+      }
+    }
+    .bt-contato{      
+        font-size: 16px;
+        color: #FFF;
+        display: inline-flex;
+        float: left;
+        align-items: center;
+        padding: 12px 31px;
+        gap: 8px;
+        border: 1px solid #FFF;
+        text-decoration: none;
+        text-align: center;
+        margin-top: 7.25rem;
+        transition: 0.7s;
+    }
+    .bt-contato:hover{
+      transition: 0.7s;
+      background: #FFF;
+      color: #000;
+    }
+  }
+}
+/***** CLIENTES *****/
+.clientes{
+  width: 100%;
+  height: auto;
+  background: #FFF;
+  padding: 5.625rem 0;
+  h2{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    font-weight: 400;
+    color: #191919;
+    strong{
+      font-weight: 900;
+      color: #000;
+    }
+  }
+  .list-item{
+    margin-top: 3.938rem;
+    text-align: center;
+    .row{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .item{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+  }
+}
+/***** CONTATO *****/
+.contato{
+  width: 100%;
+  height: auto;
+  padding: 17.813rem 0;
+  h2{
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: #FFF;
+    text-align: left;
+    text-transform: uppercase;
+    line-height: 57.6px;
+    letter-spacing: -3%;
+    strong{
+      font-weight: 900;
+    }
+  }
+  .form-box{
+    width: 90%;
+    margin-top: 4.688rem;
+    label{
+      width: 100%;
+      color: #FFF;
+      font-size: 18px;
+
+      .field{
+        width: 100%;
+        height: auto;
+        background: transparent;
+        border: 1px solid #FFF;
+        padding: 1.188rem;
+        color: #FFF;
+        margin-top: 1rem;
+      }
+    }
+    .wpcf7-submit{
+      width: 100%;
+      text-align: center;
+      color: #191919;
+      padding: 1.125rem 0;
+      background: #FFF;
+      border: 1px solid transparent;
+      transition: 0.8s;
+    }
+    .wpcf7-submit:hover{
+      color: #FFF;
+      border: 1px solid #FFF;
+      background: transparent;
+      transition: 0.8s;
+    }
+
+  }
+
+}
+
+/*****MOBILE*******/
+@media (max-width:991px){
+
+}
+@media screen and (max-width: 767px) {
+
+}
+@media(min-width: 480px){
+
+  
+}
+@media(max-width: 479px){
+
+}

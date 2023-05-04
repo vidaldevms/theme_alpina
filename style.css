@@ -1,0 +1,416 @@
+@charset "UTF-8";
+/*
+Theme Name: Tema Alpina
+Theme URI:
+Description : Teste Alpina
+Author: Gabriel Vidal
+Author URI: 
+Version: 1.0
+*/
+* {
+  font-family: "Roboto", sans-serif !important;
+}
+
+h1, h2, h3, h4 {
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+ul {
+  margin: auto;
+}
+
+/***** HEADER *****/
+header {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7));
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+header .logo {
+  padding: 1.875rem 0;
+}
+header .logo img {
+  display: block;
+  height: auto;
+}
+header .menu {
+  display: grid;
+}
+header nav {
+  text-align: center;
+  display: grid;
+}
+header nav ul {
+  list-style: none;
+  margin: auto;
+  padding: 0;
+}
+header nav ul li {
+  position: relative;
+  display: inline-block;
+}
+header nav ul li a {
+  display: block;
+  font-size: 18px;
+  color: #999;
+  text-decoration: none;
+  padding: 0 1.5rem;
+}
+header nav ul li a:hover {
+  color: #FFF;
+}
+header nav ul li::after {
+  content: "";
+  width: 80%;
+  height: 4px;
+  display: none;
+  background: #FFF;
+  position: absolute;
+  left: 10%;
+  bottom: -125%;
+}
+header nav ul li:hover li::after {
+  display: block !important;
+}
+header nav ul li:first-child {
+  padding-left: 0 !important;
+}
+header nav ul li:last-child {
+  padding-right: 0 !important;
+}
+header .bt-contato a {
+  font-size: 16px;
+  color: #FFF;
+  display: inline-flex;
+  float: right;
+  align-items: center;
+  padding: 12px 31px;
+  gap: 8px;
+  border: 1px solid #FFF;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 1.813rem;
+  transition: 0.7s;
+}
+header .bt-contato a:hover {
+  transition: 0.7s;
+  background: #FFF;
+  color: #000;
+}
+
+/***** MAIN *****/
+main {
+  width: 100%;
+  height: auto;
+  background: #000;
+}
+
+/***** SLIDER *****/
+.slider .caption {
+  margin-top: 16.688rem;
+}
+.slider h2 {
+  font-size: 64px;
+  font-weight: 900;
+  color: #FFF;
+  text-align: left;
+  text-transform: uppercase;
+  line-height: 57.6px;
+  letter-spacing: -3%;
+}
+.slider p {
+  font-family: Roboto;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 400;
+  color: #999;
+  margin-top: 1.5rem;
+}
+.slider p strong {
+  font-weight: 700;
+  color: #FFF;
+}
+.slider .leia-mais {
+  font-size: 24px;
+  line-height: 150%;
+  color: #FFF;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  margin-top: 2.375rem;
+}
+.slider .leia-mais::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: -30%;
+  background: url(images/icon-seta.png) no-repeat center center;
+}
+
+/***** SERVIÇOS *****/
+.solucoes {
+  width: 100%;
+  height: auto;
+  margin-top: 15.625rem;
+}
+.solucoes .title {
+  font-size: 56px;
+  font-weight: 900;
+  line-height: 50px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  color: #FFF;
+}
+.solucoes p.sub {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #999;
+}
+.solucoes p.sub strong {
+  font-weight: 700;
+  color: #FFF;
+}
+.solucoes .default-btn {
+  font-size: 24px;
+  line-height: 36px;
+  color: #FFF;
+  text-decoration: none;
+  position: relative;
+  display: inline;
+  float: right;
+  padding-right: 3.125rem;
+}
+.solucoes .default-btn::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: url(images/icon-seta.png) no-repeat center center;
+}
+.solucoes .item {
+  width: 100%;
+  height: auto;
+  background: #191919;
+  padding: 3rem;
+  transition: 0.8s;
+  margin-top: 4.75rem;
+  position: relative;
+}
+.solucoes .item .icone {
+  display: block;
+}
+.solucoes .item h3 {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 29px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  color: #FFF;
+  margin-top: 1.625rem !important;
+}
+.solucoes .item .content {
+  padding-top: 4.188rem;
+}
+.solucoes .item .content p {
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.solucoes .item::after {
+  content: "";
+  width: 4.625rem;
+  height: 4.625rem;
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: url(images/icon-seta.png) #191919 no-repeat center center;
+}
+.solucoes .item:hover {
+  cursor: pointer;
+  background: #FFF;
+  transition: 0.8s;
+}
+.solucoes .item:hover h3, .solucoes .item:hover p {
+  color: #191919;
+}
+.solucoes .item:hover .item::after {
+  display: block !important;
+}
+
+/***** ALPINA *****/
+.alpina {
+  width: 100%;
+  height: auto;
+  margin-top: 15.375rem;
+}
+.alpina .item-alpina {
+  margin-top: 4.25rem;
+}
+.alpina .item-alpina .descricao h2.first-title {
+  background: #000;
+  position: relative;
+  left: -15rem;
+  top: -6rem;
+  z-index: 999;
+  padding: 3.5rem 2rem;
+}
+.alpina .descricao {
+  margin-top: 5.125rem;
+}
+.alpina .descricao h2 {
+  font-size: 64px;
+  font-weight: 300;
+  color: #FFF;
+  text-align: left;
+  text-transform: uppercase;
+  line-height: 57.6px;
+  letter-spacing: -3%;
+}
+.alpina .descricao h2 strong {
+  font-weight: 900;
+}
+.alpina .descricao p {
+  margin-top: 4rem;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #999;
+}
+.alpina .descricao p strong {
+  font-weight: 700;
+  color: #FFF;
+}
+.alpina .descricao .bt-contato {
+  font-size: 16px;
+  color: #FFF;
+  display: inline-flex;
+  float: left;
+  align-items: center;
+  padding: 12px 31px;
+  gap: 8px;
+  border: 1px solid #FFF;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 7.25rem;
+  transition: 0.7s;
+}
+.alpina .descricao .bt-contato:hover {
+  transition: 0.7s;
+  background: #FFF;
+  color: #000;
+}
+
+/***** CLIENTES *****/
+.clientes {
+  width: 100%;
+  height: auto;
+  background: #FFF;
+  padding: 5.625rem 0;
+}
+.clientes h2 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  font-weight: 400;
+  color: #191919;
+}
+.clientes h2 strong {
+  font-weight: 900;
+  color: #000;
+}
+.clientes .list-item {
+  margin-top: 3.938rem;
+  text-align: center;
+}
+.clientes .list-item .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clientes .list-item .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/***** CONTATO *****/
+.contato {
+  width: 100%;
+  height: auto;
+  padding: 17.813rem 0;
+}
+.contato h2 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  color: #FFF;
+  text-align: left;
+  text-transform: uppercase;
+  line-height: 57.6px;
+  letter-spacing: -3%;
+}
+.contato h2 strong {
+  font-weight: 900;
+}
+.contato .form-box {
+  width: 90%;
+  margin-top: 4.688rem;
+}
+.contato .form-box label {
+  width: 100%;
+  color: #FFF;
+  font-size: 18px;
+}
+.contato .form-box label .field {
+  width: 100%;
+  height: auto;
+  background: transparent;
+  border: 1px solid #FFF;
+  padding: 1.188rem;
+  color: #FFF;
+  margin-top: 1rem;
+}
+.contato .form-box .wpcf7-submit {
+  width: 100%;
+  text-align: center;
+  color: #191919;
+  padding: 1.125rem 0;
+  background: #FFF;
+  border: 1px solid transparent;
+  transition: 0.8s;
+}
+.contato .form-box .wpcf7-submit:hover {
+  color: #FFF;
+  border: 1px solid #FFF;
+  background: transparent;
+  transition: 0.8s;
+}
+
+/*****MOBILE*******/
+
+/*# sourceMappingURL=style.css.map */
